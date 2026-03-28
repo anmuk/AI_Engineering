@@ -1,0 +1,29 @@
+Python and uv setup -
+
+With traditional python we can only use a fixed python version  and uses venv for different environments but it copies the original python 
+but uv can maintain different versions of python. uv can have venv inside it.
+
+Prefer using cmd over powershell as CMD is simpler and primarily used for basic file management and system commands
+
+uv can be used to install multiple versions of python
+uv install python 3.13.12
+uv python pin 3.13.12
+uv init -> sets up project files
+uv sync -> reads the project toml files and creats venv
+uv add -> downloads library u want to venv and adds it to toml file dependency, any other dev can just use that toml file to create same repo
+uv remove -> remove library from venv
+project.toml is main file which uv uses to track things like dependencies
+
+in order to use a different version of python - delete all uv files and python version file and pin new version and start from there
+
+don't create any file inside .venv folder
+
+command for windows to run python - 
+.venv\Scripts\activate
+uv run python hello_world.py
+
+uv run is a static command to run anything
+
+
+
+

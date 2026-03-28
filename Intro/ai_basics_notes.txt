@@ -39,4 +39,3 @@ chatGPT + tool + calling the tool = Agentic AI
 
 speech to text - due to Transformers
 GPT - also a result of transformers
-
