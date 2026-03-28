@@ -1,0 +1,49 @@
+AI coding assistants -
+
+(to configure inside system)
+1. Github Copilot
+2. Claude Code
+3. OpenAI Codex 
+
+AI IDEs -
+Cursor, Antigravity
+
+AI 
+-> ML (stats), DL(neural networks), RL (QLearning algorithm)
+
+Neural Networks -> 
+
+ANN (artificial) - multilayer perceptron (MLP)
+CNN (convolutional) - Computer Vision, Keras/Yolo/SSD Modules
+DRL (Deep Reinforcement Learning) - PPO
+GAN (Generative adversarial)
+RNN (recurrent) - NLP 
+-> Advanced NLP
+-> natural language, LSTM/GRU 
+-> Encode - Decoder 
+
+(Here onwards we being the latest AI Engingeering route)
+-> Transformer architecture (GenAI, LLMs, SLMs, MMLLMs)
+-> Fine-tuning
+-> RAG/mmRAG
+-> Agentic AI
+-> LLMOps
+
+GenAI starts from transformer, other in depth ML not required for AI Engineering
+
+Important modules/libraries/Concepts to cover -
+
+1.  Pytorch 
+2.  Hugging Face
+3.  Unsloth
+4.  Langchain
+5.  LlamaIndex
+6.  Langgraph
+7.  Data Parsing, Vector DB, Cloud
+8.  OpenAI SDK
+9.  Guardrails
+10. MCP
+
+
+
+
