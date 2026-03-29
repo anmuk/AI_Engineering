@@ -141,6 +141,8 @@ Context Awareness not preserved vs preserved
 
 There are several SOTA models - paid and open source both available
 
+Keyword vs Semantic Search (similarity search):
+
 
 
 

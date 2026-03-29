@@ -8,6 +8,8 @@
 AI IDEs -
 Cursor, Antigravity
 
+---
+
 **AI** 
 -> ML (stats), DL(neural networks), RL (QLearning algorithm)
 
@@ -30,6 +32,8 @@ RNN (recurrent) - NLP
 -> LLMOps
 
 GenAI starts from transformer, other in depth ML not required for AI Engineering
+
+---
 
 **Important modules/libraries/Concepts to cover** -
 

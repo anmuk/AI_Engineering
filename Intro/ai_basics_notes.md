@@ -3,6 +3,8 @@ IDE - All features of code editor + more features, e.g. Intellij for Java or Pyc
 
 Python - needed for AI, advanced Python knowledge needed, atleast upto OOP concepts
 
+---
+
 AI - machines programmed to exhibit human-like decision making
 
 AI  -> Machine Learning -> Deep Learning (uses neural networks) -> Generative AI
@@ -12,6 +14,8 @@ NN/DL - Advanced ML utilizing multi-layered neural networks to find complex patt
 NN are very data hugry, internet provides a lot of data for NN
 GenAI -  subfield of AI that uses models to create new content such as text, images, audio, and videos based on the patterns learned from existing data
 
+---
+
 ML weather forecast - pass a year's data, based on 7 days of forecast we can predict tmrw's weather
 
 data -> ML -> pattern -> fit the line
@@ -19,6 +23,8 @@ data -> ML -> pattern -> fit the line
 from ML you can predict weather, but genAI if for predicting. There is difference in generative and predictive.
 
 chatGPT doesn't use ML algos, it is different.
+
+---
 
 Traditional -> Discriminative AI -> fit the line / learn boundaries
 Modern -> Gen AI -> learn the distribution for generating
@@ -32,6 +38,8 @@ Agntic AI -> systems that can understand + can also perform action
 chatGPT + tool + calling the tool = Agentic AI
 
 - giving access to tools like vs code, terminal, output -> the system is automated. 
+
+---
 
 2013 - Variational Auto Encoders (VAE) - compression and decompression
 2014 - GAN - generating of image + data

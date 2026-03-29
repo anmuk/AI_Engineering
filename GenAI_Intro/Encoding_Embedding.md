@@ -8,6 +8,8 @@ Encoder-Decoder architecture - this is classical architecture (not needed for me
 
 Transformer - Attention is All You Need - this is important
 
+---
+
 **Base theory topics** - 
 
 encoding, embedding, transformer, LLMs (SLM/mmLLM)
@@ -23,6 +25,8 @@ DA -> DE -> DS -> MLE/MLOps -> DE
 Job profiles -
 
 AI Architect / AI Engineer / AI builder / GenAI Engineer / Agentic AI Engineer / LLMOps Engineer
+
+---
 
 **Embedding**
 
