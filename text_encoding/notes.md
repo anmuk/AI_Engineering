@@ -16,12 +16,13 @@ Emcoding is converting raw data into numerical form ( oftern sparse) without nec
 
 **Methods of encoding**
 
-one-hot encoding
-Bag of Words (BOW)
-Term frequency - Inverse Document Frequency (TF-IDF)
-BM25: BM25 is an improved extension of TF-IDF, but technically it is a ranking algorithm, not just an encoding method
-GloVe: Global Vectors is a count-based + matrix factoriztion-based
+1. one-hot encoding
+2. Bag of Words (BOW)
+3. Term frequency - Inverse Document Frequency (TF-IDF)
+4. BM25: BM25 is an improved extension of TF-IDF, but technically it is a ranking algorithm, not just an encoding method
+5. GloVe: Global Vectors is a count-based + matrix factoriztion-based
 
+First 3 methods are most important for us
 ---
 
 **Vectors and Matrix**
@@ -161,6 +162,39 @@ heart risk not equal to cardiovascular disease
 
 But semantic search will give these a strong match
 
+Google-like search engines, Image search, Pinterest, recommendation systems on netflix or amazon - all use vectors similarly through embedding
+
+---
+
+**Summary**
+
+1) Vectors, 
+
+2) dot product, cosine, ED  
+
+3) Encoding & Embedding
+
+Encoding:
+-> OHE, BOW, TFIDF - mathematical
+
+Embedding:
+
+-> classical : word - word2vec
+-> New with transformers: SOTA - any type of data type
+
+4) Semantic Search and differences from keyword search
+
+---
+
+**Models**
+
+hugging face mteb board has list of all the open source embedding models
+
+https://huggingface.co/spaces/mteb/leaderboard
+
+https://www.sbert.net/
+
+https://huggingface.co/models?library=sentence-transformers
 
 
 
