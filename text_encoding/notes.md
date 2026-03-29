@@ -141,7 +141,27 @@ Context Awareness not preserved vs preserved
 
 There are several SOTA models - paid and open source both available
 
-Keyword vs Semantic Search (similarity search):
+---
+
+**Keyword vs Semantic Search (similarity search):**
+
+Keyword search matches words.
+Semantic matches meaning: find out similarity using matrix like cosine, euclidian, dot product, etc.
+
+Keyword search fails when:
+"How to reduce heart risk"
+"Ways to lower cadiovascular disease chances"
+
+But system will mainly look for exact words
+
+A traditional keyword search may not match it
+
+reduce not equal to lower
+heart risk not equal to cardiovascular disease
+
+But semantic search will give these a strong match
+
+
 
 
 
