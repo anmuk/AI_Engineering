@@ -24,7 +24,7 @@ Job profiles -
 
 AI Architect / AI Engineer / AI builder / GenAI Engineer / Agentic AI Engineer / LLMOps Engineer
 
-****Embedding**
+**Embedding**
 
 1) Encoding
 2) Embedding    

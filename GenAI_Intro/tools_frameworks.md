@@ -11,7 +11,6 @@
 - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory)
 - [Huggingface](https://huggingface.co/)
 
-**Vector Databases & Search (RAG Backbone)**
 
 - [FAISS](https://github.com/facebookresearch/faiss)
 - [Chroma](https://docs.trychroma.com/)
