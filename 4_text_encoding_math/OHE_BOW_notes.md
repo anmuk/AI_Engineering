@@ -120,3 +120,77 @@ Easy to implement, captures word frequency, works well for text classification /
  
 **Overemphasizes frequent words:** "movie movie movie" gets high importance even if the repetition is meaningless.
 
+---
+ 
+## Code Walkthrough
+ 
+### OHE with sklearn
+ 
+```python
+from sklearn.preprocessing import OneHotEncoder
+import numpy
+ 
+documents = ["people watch movie", 
+             "people watch cricket", 
+             "people like movie", 
+             "people like cricket"]
+ 
+# Tokenize: split each sentence into words
+tokens = [sentence.lower().split() for sentence in documents]
+# [['people', 'watch', 'movie'], ['people', 'watch', 'cricket'], ...]
+ 
+# Reshape for sklearn: each word needs to be its own list
+all_words = [[word] for sentence in tokens for word in sentence]
+# [['people'], ['watch'], ['movie'], ['people'], ...]
+ 
+# Create encoder. sparse_output=False returns NumPy array instead of sparse matrix.
+encoder = OneHotEncoder(sparse_output=False)
+encoder.fit(all_words)  # learns the vocabulary
+ 
+# Check vocabulary
+print("Vocabulary:", encoder.categories_[0])
+# ['cricket' 'like' 'movie' 'people' 'watch']
+ 
+# Encode each sentence (word level representation)
+for sentence in tokens:
+    encoded_sentence = encoder.transform([[word] for word in sentence])
+    print("Sentence:", sentence)
+    print(encoded_sentence)
+```
+ 
+### BoW with sklearn
+ 
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+ 
+documents = ["people watch movie and watch movie again", 
+             "people watch cricket and watch cricket",
+             "people like movie and like movie a lot",
+             "people like cricket"]
+ 
+# CountVectorizer handles tokenization + vocabulary + counting in one step
+bow = CountVectorizer()
+bow.fit(documents)  # learns vocabulary
+ 
+# Check vocabulary
+print(bow.get_feature_names_out())
+ 
+# Transform to BoW vectors
+print(bow.transform(documents).toarray())
+# .toarray() converts sparse matrix to regular NumPy array
+ 
+# OOV demonstration
+new_doc = ["cows are friendly animals"]
+bow.transform(new_doc)
+# All zeros. None of these words are in the vocabulary. This is the OOV problem.
+```
+ 
+### The sklearn Pattern
+ 
+Both OHE and BoW follow the same workflow:
+ 
+1. **Create** the object (OneHotEncoder or CountVectorizer)
+2. **Fit** on training data (learns the vocabulary)
+3. **Transform** new data using the learned vocabulary
+ 
+You can combine steps 2 and 3 with `fit_transform()` on training data.
